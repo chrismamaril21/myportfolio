@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+
+		body{
+			 background: url(bg/home.jpg) no-repeat;
+			 background-size: cover;
+			 background-attachment: fixed;
+			 margin:0;
+			 padding:0;
+		}
+		ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+.active {
+  background-color: #4CAF50;
+}
+		
+		.container{
+			position: absolute;						
+		}
+		li{
+			display: inline-block;
+		}
+		li a{
+			text-decoration: none;
+			display: inline-block;
+			color: #fff;
+			font-family: Rockwell;
+			font-weight: lighter;
+			font-size: 20px;
+			padding: 0 15px;
+		}
+		.cool-link::after{
+			content: '';
+			display: block;
+			width: 0;
+			height: 2px;
+			background: #fff;
+			transition: width .3s;
+		}
+		.cool-link:hover::after{
+			width: 100%;
+			transition: width .3s;
+		}
+
+		a{	
+			font-size: 18px;
+			padding: 5px;
+			text-align: center;
+			text-decoration: none;
+			color: white;
+			text-shadow: 1px 2px 1px yellow;
+			text-transform: uppercase;
+			border-radius: 7px;
+			cursor: pointer;
+			margin: 6px;
+			font-family: Rockwell;	
+			font-weight: bold;		
+		}
+		
+		a:link {
+        color: yellow;
+ 		background-color: none;
+  		text-decoration: none;
+		}
+		a:visited {
+ 		 color: orange;
+ 		 background-color: none;
+  		text-decoration: none;
+		}
+		a:hover {
+  		color: red;
+  		background-color: transparent;
+  		text-decoration: underline;
+		}
+		a:active {
+  		color: yellow;
+  		background-color: transparent;
+  		text-decoration: underline;
+		}
+		.hm{
+			
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			-webkit-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+			-webkit-transition-property: box-shadow, transform;
+			transition-property: box-shadow, transform;
+		}
+		.hm:hover, .hm:focus, .ahm:active{
+			box-shadow: 0 0 30px rgba(0, 0, 0, 10);
+			-webkit-transform: scale(1.1);
+			transform: scale(1.1);
+		}
+
+		
+
+		.gl{
+			
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			-webkit-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+			-webkit-transition-property: box-shadow, transform;
+			transition-property: box-shadow, transform;
+		}
+		.gl:hover, .gl:focus, .gl:active{
+			box-shadow: 0 0 30px rgba(0, 0, 0, 10);
+			-webkit-transform: scale(1.1);
+			transform: scale(1.1);
+		}
+
+		.ptp{
+			
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			-webkit-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+			-webkit-transition-property: box-shadow, transform;
+			transition-property: box-shadow, transform;
+		}
+		.ptp:hover, .ptp:focus, .ptp:active{
+			box-shadow: 0 0 30px rgba(0, 0, 0, 10);
+			-webkit-transform: scale(1.1);
+			transform: scale(1.1);
+		}
+
+		.ptry{
+			
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			-webkit-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+			-webkit-transition-property: box-shadow, transform;
+			transition-property: box-shadow, transform;
+		}
+		.ptry:hover, .ptry:focus, .ptry:active{
+			box-shadow: 0 0 30px rgba(0, 0, 0, 10);
+			-webkit-transform: scale(1.1);
+			transform: scale(1.1);
+		}
+
+
+		.mw{
+			
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			-webkit-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+			-webkit-transition-property: box-shadow, transform;
+			transition-property: box-shadow, transform;
+		}
+		.mw:hover, .mw:focus, .mw:active{
+			box-shadow: 0 0 30px rgba(0, 0, 0, 10);
+			-webkit-transform: scale(1.1);
+			transform: scale(1.1);
+		}
+
+		.ed{
+			
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			-webkit-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+			-webkit-transition-property: box-shadow, transform;
+			transition-property: box-shadow, transform;
+		}
+		.ed:hover, .ed:focus, .ed:active{
+			box-shadow: 0 0 30px rgba(0, 0, 0, 10);
+			-webkit-transform: scale(1.1);
+			transform: scale(1.1);
+		}
+		.fam{
+			
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			-webkit-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+			-webkit-transition-property: box-shadow, transform;
+			transition-property: box-shadow, transform;
+		}
+		.fam:hover, .fam:focus, .fam:active{
+			box-shadow: 0 0 30px rgba(0, 0, 0, 10);
+			-webkit-transform: scale(1.1);
+			transform: scale(1.1);
+		}
+		.abt{
+			
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			-webkit-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+			-webkit-transition-property: box-shadow, transform;
+			transition-property: box-shadow, transform;
+		}
+		.abt:hover, .abt:focus, .abt:active{
+			box-shadow: 0 0 30px rgba(0, 0, 0, 10);
+			-webkit-transform: scale(1.1);
+			transform: scale(1.1);
+		}
+
+		h1{
+			color:black;
+			font-size: 85px;
+			font-family: Rockwell Condensed;
+			text-shadow: 1px 2px 1px white;
+			padding-top: 0px 0px;
+		}
+		
+		h2{
+			color: black;
+			font-size:  40px;
+			font-family: Engravers MT;
+			text-shadow: 1px 2px 1px yellow;
+			margin-top: 30px;	
+		}
+		h3{
+			color: black;
+			font-size:  20px;
+			font-family: Times New Roman;
+			margin-top: 10px;	
+		}
+		
+		.img{
+			height: 120px;
+			width: 120px;
+			background-size: cover;
+			background-position: center;
+			border-radius: 70px;
+			position: absolute;
+			top: 65%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		.social-menu {
+			position: absolute;
+			top:78%;
+			left: 50%;
+			padding: 0;
+			margin: 0;
+			transform: translate(-50%, -50%);
+			display:flex;	
+		}
+		.social-menu  li{
+			list-style:none;
+			margin:0 15px;
+		}
+		.social-menu li .fa{
+			font-size: 25px;
+			line-height: 55px;
+			transition: .6s;
+			color: #2c3e50;
+		}
+		.social-menu li .fa:hover{
+			color: #fff;
+		}
+		.social-menu  li a{
+			position: relative;
+			display: block;
+			width: 24px;
+			height: 52px;
+			border-radius: 50%;
+			background-color: #ecf0f1;
+			text-align: center;
+			transition: .6s;
+			box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+		}
+		.social-menu li a:hover{
+			transform: translate(0, -10px)
+		}
+		.social-menu li:nth-child(1) a:hover{
+			background-color: #3b5999;
+		}
+		.social-menu li:nth-child(2) a:hover{
+			background-color: #e4405f;
+		}
+		.social-menu li:nth-child(3) a:hover{
+			background-color: #55acee;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<body>
+
+      
+</body>
+</html>
+	
+	<div class="container">
+		<a href="Home.html" class="hm">Home</a>
+		<a href="Gallery.html"   class="gl">Gallery</a>
+		<a href="Photography.html"   class="ptp">Phone'tography</a>
+		<a href="Poetry.html"   class="ptry">Poetry</a>
+		<a href="MyWorks.html"   class="mw" >My Works</a>
+	    <a href="Educ.html"   class="ed" >Education</a>
+	    <a href="Family.html"   class="fam">Family</a>
+	    <a href="About.html"      class="abt">About</a>
+<br>    
+<br>
+<ul>
+
+  <li><img src="logo/cited.gif" height="100px"></a></li>
+  <li style="float:right"><img src="logo/ucu.png" height="	100px"></li>
+</ul>
+	  <center>
+	   	<h1>
+	   	<i> WELCOME TO MY PORTFOLIO</i>
+	   </h1>
+	   </center>
+
+	   
+	   
+	  <ul>
+  <li><img src="image/venus.png" height="500px"></a></li>
+  <li style="float:right"><h2>
+			<i>Venus Tabonda Bombay</i>
+			<center>
+	   	<div class="social-menu">
+	   		<li><a href="https://www.facebook.com/venusxden"><i class="fa fa-facebook-f"target="_blank"></i></a></li>
+	   		<li><a href="https://www.instagram.com/_alunsinaaa/"><i class="fa fa-instagram"target="_blank"></i></a></li>
+	   		<li><a href="https://twitter.com/VxnxsThePlanet"><i class="fa fa-twitter"target="_blank"></i></a></li>
+	   	</div>
+	   </center>
+	   </h2>
+	   </li>
+
+</ul>
+   
+	  
+</body>
+</html>
+
+
